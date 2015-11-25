@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #fff;
+	background: #fff url(../img/pattern-white.png);
 	font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif;
 }
 
@@ -11,7 +11,7 @@ body {
 }
 
 #header {
-	background: #000;
+	background: #000 url(../img/pattern-trans.png);
 	color: #fff;
 	position: fixed;
 	box-shadow: 0 0 10px #888;
@@ -64,17 +64,15 @@ body {
 	float: left;
 	padding: 20px;
 	width: 760px;
-	min-height: 500px;
 }
 
 #content #sidebar {
 	float: right;
 	width: 200px;
-	min-height: 500px;
 }
 
 #footer {
-	background: #333;
+	background: #111;
 	padding: 0 20px;
 	line-height: 60px;
 	color: #aaa;
