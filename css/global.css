@@ -1,0 +1,82 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif;
+}
+
+#wrap {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#header {
+	background: #000;
+	color: #fff;
+	position: fixed;
+	box-shadow: 0 0 10px #888;
+	width: 1000px;
+}
+
+#header #sitename {
+	float: left;
+	padding-left: 90px;
+	background: transparent url(../img/logo-header.png) no-repeat;
+	line-height: 60px;
+	margin-left: 20px;
+	font-size: 14px;
+	font-weight: 600;
+	text-shadow: 0 0 8px #eee;
+}
+
+#header #menu {
+	float: right;
+	text-align: right;
+	margin-right: 20px;
+}
+
+#header #menu a {
+	color: #eee;
+	text-decoration: none;
+	text-shadow: 0 0 8px #eee;
+}
+
+#header #menu a:hover, #header #menu .active {
+	color: #373;
+	text-shadow: none;
+}
+
+#header #menu a, #header #menu .active {
+	line-height: 60px;
+	margin-left: 15px;
+	font-weight: 600;
+	font-size: 14px;	
+}
+
+#content {
+	clear: both;
+	overflow: auto;
+	padding-top: 60px;
+	font-size: 13px;
+}
+
+#content #main {
+	float: left;
+	padding: 20px;
+	width: 760px;
+	min-height: 500px;
+}
+
+#content #sidebar {
+	float: right;
+	width: 200px;
+	min-height: 500px;
+}
+
+#footer {
+	background: #333;
+	padding: 0 20px;
+	line-height: 60px;
+	color: #aaa;
+	box-shadow: 0 0 10px #888;
+}
