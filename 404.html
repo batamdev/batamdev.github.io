@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Not Found !</title>
+	<script src="http://file.itbatam.org/js/jquery.min.js"></script>
+	<script src="http://file.itbatam.org/js/typed.js"></script>
+	<script>
+    $(function(){
+
+        $("#typed").typed({
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 30,
+            backDelay: 500,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+    </script>
+	    <style>		
+		@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500);
+		body {
+			font-family: Ubuntu, sans-serif;
+			color: #aaa;
+			background: #000 url(http://file.itbatam.org/img/pattern.png);
+			margin: 30px 30px;
+		}
+		
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+    </style>
+</head>
+<body>
+<div id="typed-strings">
+<p><span style="font-size:50px;font-weight:500">404</span>
+<strong>File not found !</strong>
+Please wait, we need to test some codes.. be patience.
+
+	push	ds
+	push	cs
+	pop	ds
+	mov	dx,offset PGROUP:Bret
+	mov	ah,25h
+	mov	al,23h
+	int	21h
+	pop	ds
+	ret
+
+<strong>Aaarggghhh, sorry, we still can't find the file or folder you requested :-( </strong>
+maybe you should try next time..
+or maybe you're just unlucky :-)	
+</p>
+</div>
+<span id="typed" style="white-space:pre;"></span>
+</body>
+</html>
